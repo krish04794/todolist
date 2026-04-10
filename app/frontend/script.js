@@ -104,4 +104,10 @@ async function deleteTask(taskId) {
     }
 }
 
+
+
+
+window.toggleTask = toggleTask;
+window.deleteTask = deleteTask;
+
 fetchTasks();
