@@ -3,20 +3,17 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from .database import Base, engine, get_db
 from . import schemas, crud
-from fastapi.middleware.cors import CORSMiddleware
 
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="To-Do List API")
-
-
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5500",
         "http://127.0.0.1:5500",
-        "https://your-frontend.vercel.app"  # 👈 your deployed frontend
+        "https://YOUR-ACTUAL-VERCEL-URL.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
