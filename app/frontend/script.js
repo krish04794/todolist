@@ -283,5 +283,9 @@ window.closeModal = closeModal;
 window.filterTasks = filterTasks;
 window.searchTasks = searchTasks;
 
+<<<<<<< HEAD
 // Init
 updateUI();
+=======
+fetchTasks();
+>>>>>>> 9ff04cb2b830a3ee1ef7b52c1fe4565d671abd48
